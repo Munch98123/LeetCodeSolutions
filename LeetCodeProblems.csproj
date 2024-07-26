@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Hard Problems\" />
+    <Folder Include="ArrayProblems\Hard\" />
+    <Folder Include="BinaryProblems\Easy\" />
+    <Folder Include="BinaryProblems\Hard\" />
+    <Folder Include="DPProblems\Medium\" />
+    <Folder Include="DPProblems\Hard\" />
   </ItemGroup>
 
 </Project>

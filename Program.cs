@@ -1,4 +1,6 @@
-﻿using LeetCodeProblems.Easy_Problems;
+﻿using LeetCodeProblems.BinaryProblems.Medium;
+using LeetCodeProblems.DPProblems.Easy;
+using LeetCodeProblems.Easy_Problems;
 using LeetCodeProblems.Medium_Problems;
 
 namespace LeetCodeProblems
@@ -44,6 +46,21 @@ namespace LeetCodeProblems
             Console.WriteLine($"--Minimum in Sorted Array--");
             Console.WriteLine($"[ 4, 5, 6, 7, 0, 1, 2 ]");
             Console.WriteLine(MinimumInSortedArray153.FindMinBinary(new int[] { 4, 5, 6, 7, 0, 1, 2 }));
+
+            Console.WriteLine($"--Sum without + and - --");
+            Console.WriteLine($"1 and 2 ");
+            Console.WriteLine(SumOfIntegers371.AddWithoutAddition(1, 2));
+            Console.WriteLine($"2 and 3");
+            Console.WriteLine(SumOfIntegers371.AddWithoutAddition(2, 3));
+
+            Console.WriteLine($"-- Stair Climb--");
+            Console.WriteLine($"2 Stairs");
+            Console.WriteLine(ClimbingStairs70.ClimbStairs(2));
+            Console.WriteLine($"3 stairs");
+            Console.WriteLine(ClimbingStairs70.ClimbStairs(3));
+            //Anything Higher than 45 gives integer overflow which is a whole other problem to solve (likely adding together multiple 45 solutions in parts or combinations thereof)
+            Console.WriteLine($"45 stairs");
+            Console.WriteLine(ClimbingStairs70.ClimbStairs(45));
         }
     }
 }
