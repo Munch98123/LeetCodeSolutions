@@ -1,4 +1,5 @@
-﻿using LeetCodeProblems.BinaryProblems.Medium;
+﻿using LeetCodeProblems.BinaryProblems.Easy;
+using LeetCodeProblems.BinaryProblems.Medium;
 using LeetCodeProblems.DPProblems.Easy;
 using LeetCodeProblems.Easy_Problems;
 using LeetCodeProblems.Medium_Problems;
@@ -61,6 +62,31 @@ namespace LeetCodeProblems
             //Anything Higher than 45 gives integer overflow which is a whole other problem to solve (likely adding together multiple 45 solutions in parts or combinations thereof)
             Console.WriteLine($"45 stairs");
             Console.WriteLine(ClimbingStairs70.ClimbStairs(45));
+
+            Console.WriteLine($"-- Number of Ones --");
+            Console.WriteLine($"5");
+            Console.WriteLine($"Brute Force");
+            Console.WriteLine(NumberOfOnes191.GetOnesBruteForce(11));
+            Console.WriteLine(NumberOfOnes191.GetOnesBruteForce(128));
+            Console.WriteLine(NumberOfOnes191.GetOnesBruteForce(2147483645));
+
+            Console.WriteLine($"Optimized");
+            Console.WriteLine(NumberOfOnes191.GetOnesOptimized(11));
+            Console.WriteLine(NumberOfOnes191.GetOnesOptimized(128));
+            Console.WriteLine(NumberOfOnes191.GetOnesOptimized(2147483645));
+
+            Console.WriteLine($"-- Count bits of each index --");
+            Console.WriteLine($"2");
+            Array.ForEach(CountingBits338.GetBits(2), print);
+            Console.WriteLine($"5");
+            Array.ForEach(CountingBits338.GetBits(5), print);
+
+            Console.WriteLine($"-- Calculat Missing number from array --");
+            Console.WriteLine($"[3, 0, 1]");
+            Console.WriteLine(MissingNumber268.MissingNumber(new int[] {3, 0, 1}));
+            Console.WriteLine($"[9, 6, 4, 2, 3, 5, 7, 0, 1]");
+            Console.WriteLine(MissingNumber268.MissingNumber(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }));
+
         }
     }
 }

@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="ArrayProblems\Hard\" />
-    <Folder Include="BinaryProblems\Easy\" />
     <Folder Include="BinaryProblems\Hard\" />
     <Folder Include="DPProblems\Medium\" />
     <Folder Include="DPProblems\Hard\" />
