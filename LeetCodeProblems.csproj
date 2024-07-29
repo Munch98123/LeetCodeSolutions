@@ -10,8 +10,12 @@
   <ItemGroup>
     <Folder Include="ArrayProblems\Hard\" />
     <Folder Include="BinaryProblems\Hard\" />
-    <Folder Include="DPProblems\Medium\" />
     <Folder Include="DPProblems\Hard\" />
+    <Folder Include="StringProblems\Easy\" />
+    <Folder Include="StringProblems\Medium\" />
+    <Folder Include="StringProblems\Hard\" />
+    <Folder Include="TreeProblems\Medium\" />
+    <Folder Include="TreeProblems\Hard\" />
   </ItemGroup>
 
 </Project>
